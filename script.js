@@ -122,3 +122,28 @@ console.log(timmy.getWeight());
 //11.Have Timmy exercise twice
 timmy.exercise(2);
 console.log(timmy.getWeight());
+
+//Chef Dinners
+
+class Dinner{
+    constructor(appetizer, entree, dessert){
+        this.appetizer =appetizer;
+        this.entree = entree;
+        this.dessert = dessert;
+    }
+
+}
+
+class Chef{
+
+    createDinner(appetizer, entree, dessert){
+        const newDinner =new Dinner(appetizer, entree,dessert);
+        console.log(newDinner);
+    }
+}
+
+const chef = new Chef();
+
+chef.createDinner('mozzarella sticks', 'chicken parm', 'cheesecake');
+chef.createDinner('dumplings', 'miso ramen', 'mochi');
+chef.createDinner('chips and guac', 'steak burrito', 'cake');
